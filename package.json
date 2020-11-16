@@ -10,6 +10,6 @@
   "author": "Thomas de Barros",
   "license": "ISC",
   "dependencies": {
-    "mongodb": "^3.6.2"
+    "mongodb": "^3.6.3"
   }
 }

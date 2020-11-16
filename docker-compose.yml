@@ -1,4 +1,4 @@
-version: '3'
+version: '3.7'
 services:
     node:
         build: .
@@ -15,14 +15,10 @@ services:
             - "27017:27017"
         logging:
             driver: none
-        environment:
-            MONGO_URI: mongodb://localhost:27017
-            MONGO_INITDB_ROOT_USERNAME: root
-            MONGO_INITDB_ROOT_PASSWORD: rootpassword
+        restart: always
         volumes:
             - mongodb:/data/db
-            - mongodb_config:/data/configdb
 volumes:
     mongodb:
-    mongodb_config:
+
         
